@@ -23,7 +23,7 @@
 <li>JQuery</li>
 <li>Python</li>
 
-<h1>Sketch Page Referred from<h1>
+<h2>Sketch Page Referred from<h1>
   <li><a href="https://github.com/rjitsu/Sketchy">Rishav Jadon</a></li>
 
 <h1>Editor</h1>
