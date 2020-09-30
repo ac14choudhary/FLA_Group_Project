@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Formal Language Automata</title>
+    <meta content="" name="descriptison" />
+    <meta content="" name="keywords" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="container d-flex">
+        <div class="logo mr-auto">
+          <h1 class="text-light">
+            <a href="index.html"><span>Mini Project</span></a>
+          </h1>
+        </div>
+
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+
+            <li class="#"><a href="index.html">Automata</a></li>
+
+            <li><a href="index.html">Types</a></li>
+            <li><a href="problem.html">Problems</a></li>
+            <li><a href="">Conversion</a></li>
+            <li><a href="sketch.html">Practice</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+      <br />
+      <br />
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Problem Approach</h2>
+      </div>
+
+      <section id="about" class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <b>
+                Let X = (Qx, ∑, δx, q0, Fx) be an NDFA which accepts the
+                language L(X). We have to design an equivalent DFA Y = (Qy, ∑,
+                δy, q0, Fy) such that L(Y) = L(X). The following procedure
+                converts the NDFA to its equivalent DFA −</b
+              >
+              <br />
+              <br />
+
+              <b>Algorithm</b>
+              <br />
+              <li>Input − An NDFA</li>
+
+              <li>Output − An equivalent DFA</li>
+
+              <li>Step 1 − Create state table from the given NDFA.</li>
+
+              <li>
+                Step 2 − Create a blank state table under possible input
+                alphabets for the equivalent DFA.
+              </li>
+
+              <li>
+                Step 3 − Mark the start state of the DFA by q0 (Same as the
+                NDFA).
+              </li>
+
+              <li>
+                Step 4 − Find out the combination of States {Q0, Q1,... , Qn}
+                for each possible input alphabet.
+              </li>
+
+              <li>
+                Step 5 − Each time we generate a new DFA state under the input
+                alphabet columns, we have to apply step 4 again, otherwise go to
+                step 6.
+              </li>
+
+              <li>
+                Step 6 − The states which contain any of the final states of the
+                NDFA are the final states of the equivalent DFA.
+              </li>
+
+              <br />
+              <br />
+              <p>Example Let us consider the NDFA shown in the figure below.</p>
+              <img src="assets/img/ndfa.jpg" />
+              <br />
+              <br />
+              <img src="assets/img/table.PNG" />
+              <br />
+              <br />
+              <p>
+                Using the above algorithm, we find its equivalent DFA. The state
+                table of the DFA is shown in below.
+              </p>
+
+              <br />
+              <img src="assets/img/table1.PNG" />
+              <br />
+              <br />
+              <p>The state diagram of the DFA is as follows −</p>
+              <br />
+              <img src="assets/img/dfa_state_diagram.jpg" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          Made with 💖 by Unnati| Aarohi | Krishna | Aayush | Srikar
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

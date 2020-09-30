@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Formal Language Automata</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html"><span>Mini Project</span></a></h1>
+
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+
+          <li class="#"><a href="#about">Automata</a>
+
+          </li>
+
+          <li><a href="#about">Types</a></li>
+          <li><a href="problem.html">Problems</a></li>
+          <li><a href="#clients">Conversion</a></li>
+          <li><a href="sketch.html">Practice</a></li>
+          <li><a href="#footer">Contact</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <main id="main">
+    <br>
+    <br>
+
+    <div class="section-title" data-aos="fade-up">
+      <h2>Automata</h2>
+    </div>
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/img/automata.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+
+            <p class="font-italic">
+              The term "Automata" is derived from the Greek word "αὐτόματα" which means "self-acting". An automaton
+              (Automata in plural) is an abstract self-propelled computing device which follows a predetermined
+              sequence of operations automatically.
+
+              An automaton with a finite number of states is called a Finite Automaton (FA) or Finite State Machine
+              (FSM).
+
+            </p>
+            <p> Formal definition of a Finite Automaton
+              An automaton can be represented by a 5-tuple (Q, ∑, δ, q0, F), where −
+
+              <li> Q is a finite set of states.</li>
+
+              <li>∑ is a finite set of symbols, called the alphabet of the automaton.</li>
+
+              <li> δ is the transition function.</li>
+
+              <li> q0 is the initial state from where any input is processed (q0 ∈ Q).</li>
+
+              <li> F is a set of final state/states of Q (F ⊆ Q).</li>
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+    <div class="section-title" data-aos="fade-up">
+      <h2>Deterministic Finite Automata(DFA)</h2>
+    </div>
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="font-italic">
+              Finite Automaton can be classified into two types −
+
+              <li>Deterministic Finite Automaton (DFA)</li>
+              <li>Non-deterministic Finite Automaton (NDFA / NFA)</li>
+            </p>
+            <p>
+              <b>Deterministic Finite Automaton (DFA)</b><br>
+              In DFA, for each input symbol, one can determine the state to which the machine will move. Hence, it is
+              called Deterministic Automaton. As it has a finite number of states, the machine is called Deterministic
+              Finite Machine or Deterministic Finite Automaton.
+            </p>
+            A DFA can be represented by a 5-tuple (Q, ∑, δ, q0, F) where −
+
+            <li> Q is a finite set of states.</li>
+
+            <li>∑ is a finite set of symbols called the alphabet.</li>
+
+            <li> δ is the transition function where δ: Q × ∑ → Q</li>
+
+            <li> q0 is the initial state from where any input is processed (q0 ∈ Q).</li>
+
+            <li> F is a set of final state/states of Q (F ⊆ Q).</li>
+
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+
+            <p class="font-italic">
+
+
+              <b>Graphical Representation of a DFA</b>
+
+              A DFA is represented by digraphs called state diagram.
+
+              <li>The vertices represent the states.</li>
+              <li>The arcs labeled with an input alphabet show the transitions.</li>
+              <li>The initial state is denoted by an empty single incoming arc.</li>
+              <li>The final state is indicated by double circles.</li>
+              <li>Example
+                Let a deterministic finite automaton be →</li>
+
+              Q = {a, b, c},
+              ∑ = {0, 1},
+              q0 = {a},
+              F = {c}, and
+            </p>
+            <img src="assets/img/dfa_graphical_representation.jpg">
+
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-title" data-aos="fade-up">
+      <h2>Non Deterministic Finite Automata(NFA)</h2>
+    </div>
+
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="font-italic">
+
+              In NDFA, for a particular input symbol, the machine can move to any combination of the states in the
+              machine. In other words, the exact state to which the machine moves cannot be determined. Hence, it is
+              called Non-deterministic Automaton. As it has finite number of states, the machine is called
+              Non-deterministic Finite Machine or Non-deterministic Finite Automaton.
+            </p>
+            <p>Formal Definition of an NDFA
+              <li> An NDFA can be represented by a 5-tuple (Q, ∑, δ, q0, F) where −</li>
+
+              <li>Q is a finite set of states.</li>
+
+              <li>∑ is a finite set of symbols called the alphabets.</li>
+
+              <li>δ is the transition function where δ: Q × ∑ → 2Q</li>
+
+              <li>(Here the power set of Q (2Q) has been taken because in case of NDFA, from a state, transition can
+                occur
+                to any combination of Q states)</li>
+
+              <li> q0 is the initial state from where any input is processed (q0 ∈ Q).</li>
+
+              <li>F is a set of final state/states of Q (F ⊆ Q).</li>
+            </p>
+
+
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+
+            <p class="font-italic">
+              Graphical Representation of an NDFA: (same as DFA)
+              An NDFA is represented by digraphs called state diagram.
+
+              The vertices represent the states.
+              The arcs labeled with an input alphabet show the transitions.
+              The initial state is denoted by an empty single incoming arc.
+              The final state is indicated by double circles.
+              Example
+
+              Let a non-deterministic finite automaton be →
+
+              <li> Q = {a, b, c}</li>
+              <li> ∑ = {0, 1}</li>
+              <li> q0 = {a}</li>
+              <li>F = {c}</li>
+            </p>
+            <img src="assets/img/ndfa_graphical_representation.jpg">
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+
+  </main><!-- End #main -->
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+
+
+    <div class="container">
+      <div class="copyright">
+        Made with 💖 by Unnati| Aarohi | Krishna | Aayush | Srikar
+      </div>
+
+    </div>
+
+  </footer><!-- End Footer -->
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
