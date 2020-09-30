@@ -23,9 +23,6 @@
 <li>JQuery</li>
 <li>Python</li>
 
-<h2>Sketch Page Referred from<h1>
-  <li><a href="https://github.com/rjitsu/Sketchy">Rishav Jadon</a></li>
-
 <h1>Editor</h1>
 🆚Code
 
@@ -41,5 +38,10 @@
   <b>Aayush Choudhury</b>
   <br>
   <b>Srikar Jaladi</b>
+  
+  
+<h2>Sketch Page Referred from</h2>
+  <a href="https://github.com/rjitsu/Sketchy">Rishav Jadon</a>
+
   
 
