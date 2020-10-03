@@ -12,8 +12,9 @@
 
 <h1>Features</h1>
 
-<li></li>
-<li></li>
+<li>It tells you about the basics Of Automata</li>
+<li>It helps you practice your numericals</li>
+<li>It gives you information about JFlap</li>
 
 <h1>Tech Stack Used</h1>
 <li>HTML5</li>
@@ -21,7 +22,6 @@
 <li>Bootstrap4</li>
 <li>JavaScript</li>
 <li>JQuery</li>
-<li>Python</li>
 
 <h1>Editor</h1>
 🆚Code
@@ -33,11 +33,7 @@
   <br>
   <b>Aarohi Patni</b>
   <br>
-  <b>Krishna Prasad</b>
-  <br>
-  <b>Aayush Choudhury</b>
-  <br>
-  <b>Srikar Jaladi</b>
+ 
   
   
 <h2>Sketch Page Referred from</h2>
