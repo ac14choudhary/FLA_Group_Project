@@ -22,6 +22,7 @@
 <li>Bootstrap4</li>
 <li>JavaScript</li>
 <li>JQuery</li>
+<li>Python<li>
 
 <h1>Editor</h1>
 🆚Code
